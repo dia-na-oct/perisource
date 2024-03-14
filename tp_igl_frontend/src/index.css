@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"); 
+@import url("https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+    background-color: #f0f7ff;
+}
+
+
+.borderTopUser {
+    border-top: .5px solid rgba(171, 190, 209, 0.5);
+}
+
+.borderbottomUser {
+  border-bottom: .5px solid rgba(171, 190, 209, 0.8);
+  box-shadow: 0px 2px 4px rgba(171, 190, 209, 0.8);
+}
+
+.slider-container .slick-dots {
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    margin-top: 10px;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .react-datepicker__input-container input {
+    border: 1px solid rgba(171, 190, 209, 0.8);
+    border-radius: 30px;
+    padding: 8px;
+    padding-left: 15px;
+  }
+  .react-datepicker-popper {
+    z-index: 1; 
+  }
+
+  .slider-container {
+    max-width: 100%; 
+    margin: 0 auto; 
+  }
+
+  .slider-container .slick-prev,
+.slider-container .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: white; 
+  border-radius: 50%; 
+}
+
+
+.slider-container .slick-prev::before,
+.slider-container .slick-next::before {
+  color: #002366;
+}
+
+.slider-container .slick-prev:hover::before,
+.slider-container .slick-next:hover::before {
+  color: rgb(172, 172, 213)2366; 
+}
+.slider-container .slick-prev {
+  left: 20px; 
+}
+.slider-container .slick-next {
+  right: 20px; 
+}
+
+/* Styles pour le défilement horizontal */
+.scrollbar::-webkit-scrollbar {
+  height: 8px; /* Ajustez la hauteur du défilement */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #a0aec0; /* Couleur grise pour la poignée du défilement */
+  border-radius: 6px;
+  width: 4px; /* Ajustez la largeur de la poignée du défilement */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: #cbd5e0; /* Couleur grise pour la piste du défilement */
+}
+
+/* Styles pour le défilement vertical (si nécessaire) */
+.scrollbar::-webkit-scrollbar-thumb:vertical {
+  background-color: #a0aec0;
+}
+
+.scrollbar::-webkit-scrollbar-track:vertical {
+  background-color: #cbd5e0;
+}
+
+
+
+.button-hover:hover {
+  filter: brightness(200%); 
+}
+
+.button-hover img {
+  transition: filter 0.3s ease;
+}
+
+.button-hover:hover img {
+  filter: brightness(100%);
+}
+
